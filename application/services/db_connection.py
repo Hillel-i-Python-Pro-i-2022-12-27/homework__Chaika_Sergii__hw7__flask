@@ -1,6 +1,6 @@
 import sqlite3
 
-from homework__Chaika_Sergii__hw7__flask.application.settings import DB_PATH
+from application.setting import DB_PATH
 
 
 class DBConnection:
@@ -14,4 +14,3 @@ class DBConnection:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self._connection.close()
-
